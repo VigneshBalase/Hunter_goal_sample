@@ -83,10 +83,10 @@ function Header() {
                 For Jobs
               </Nav.Link>
 
-              <Nav.Link as={Link} to="/for-college&universities" className="d-block d-lg-none" style={styles.navLinkWithBorder}>
+              <Nav.Link as={Link} to="/for-college-universities" className="d-block d-lg-none" style={styles.navLinkWithBorder}>
                 For College & Universities
               </Nav.Link>
-              <Nav.Link as={Link} to="/for-college&universities" className="d-none d-lg-block" style={styles.navLinkWithoutBorder}>
+              <Nav.Link as={Link} to="/for-college-universities" className="d-none d-lg-block" style={styles.navLinkWithoutBorder}>
                 For College & Universities
               </Nav.Link>
 

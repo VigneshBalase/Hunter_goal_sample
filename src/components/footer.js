@@ -163,7 +163,7 @@ function Footer() {
             <div style={styles.column}>
               <h4>Products</h4>
               <a href="/for-knowledge" style={styles.link}>Hunter Knowledge</a>
-              <a href="/for-test" style={styles.link}>Hunter Test</a>
+              <a href="/for-test"style={styles.link}>Hunter Test</a>
               <a href="/for-jobs" style={styles.link}>Hunter Jobs</a>
               <a href="/" style={styles.link}>Hunter HRMS</a>
             </div>
