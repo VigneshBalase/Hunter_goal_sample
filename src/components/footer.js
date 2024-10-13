@@ -3,7 +3,6 @@ import logo from '../image/white_logo.png';
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import { BsCaretUpFill } from 'react-icons/bs';
 import ReactCountryFlag from "react-country-flag";
-import ForKnowledgeScreen from '../screens/ForKnowledge';
 
 // Define the base styles
 const styles = {
