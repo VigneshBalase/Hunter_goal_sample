@@ -139,16 +139,16 @@ function Footer() {
 
           <div style={styles.socialLinks}>
             <div style={styles.socialIconBox}>
-              <a href="/" style={styles.socialIcon}><FaFacebook /></a>
+              <a href="https://www.facebook.com/huntergoaltechnologies" style={styles.socialIcon}><FaFacebook /></a>
             </div>
             <div style={styles.socialIconBox}>
-              <a href="/" style={styles.socialIcon}><FaInstagram /></a>
+              <a href="https://www.instagram.com/huntergoaltechnologies/" style={styles.socialIcon}><FaInstagram /></a>
             </div>
             <div style={styles.socialIconBox}>
-              <a href="/" style={styles.socialIcon}><FaTwitter /></a>
+              <a href="https://x.com/hunter_goa74281" style={styles.socialIcon}><FaTwitter /></a>
             </div>
             <div style={styles.socialIconBox}>
-              <a href="/" style={styles.socialIcon}><FaLinkedin /></a>
+              <a href="https://www.linkedin.com/hunter-goal-opc-private-limited?_l=en_US" style={styles.socialIcon}><FaLinkedin /></a>
             </div>
           </div>
         </div>
@@ -157,15 +157,15 @@ function Footer() {
           <div style={styles.footerColumnRow}>
             <div style={styles.column}>
               <h4>Company</h4>
-              <a href="/" style={styles.link}>About Us</a>
-              <a href="/" style={styles.link}>Contact Us</a>
-              <a href="/" style={styles.link}>Career</a>
+              <a href="#" style={styles.link}>About Us</a>
+              <a href="#" style={styles.link}>Contact Us</a>
+              <a href="#" style={styles.link}>Career</a>
             </div>
             <div style={styles.column}>
               <h4>Products</h4>
-              <a href={ForKnowledgeScreen} style={styles.link}>Hunter Knowledge</a>
-              <a href="/" style={styles.link}>Hunter Test</a>
-              <a href="/" style={styles.link}>Hunter Jobs</a>
+              <a href="/for-knowledge" style={styles.link}>Hunter Knowledge</a>
+              <a href="/for-test" style={styles.link}>Hunter Test</a>
+              <a href="/for-jobs" style={styles.link}>Hunter Jobs</a>
               <a href="/" style={styles.link}>Hunter HRMS</a>
             </div>
           </div>
