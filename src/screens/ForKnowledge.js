@@ -19,10 +19,9 @@ import partner12 from '../image/HGS.png'; // Replace with actual path for the im
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import Slider from "react-slick";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import zIndex from "@mui/material/styles/zIndex";
+
 
 const corporatePartners = [
     partner1, partner2, partner3, partner4, partner5, partner6,
@@ -45,25 +44,6 @@ const ForKnowledgeScreen = () => {
         const firstHalf = corporatePartners.slice(currentSlide, currentSlide + 6);
         const secondHalf = corporatePartners.slice(0, (currentSlide + 6) % corporatePartners.length);
         return [...firstHalf, ...secondHalf].slice(0, 6);
-    };
-
-    const sliderSettings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3, // Show 3 cards at a time
-        slidesToScroll: 1, // Scroll one card at a time
-        autoplay: true,
-        autoplaySpeed: 3000, // Change every 3 seconds
-        responsive: [
-            {
-                breakpoint: 768, // For smaller devices
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                },
-            },
-        ],
     };
 
     // Internship Slider
@@ -149,7 +129,7 @@ const ForKnowledgeScreen = () => {
             setCurrentCard((prevCard) => (prevCard + 1) % internships.length); // Move to the next internship card
         }, 3000); // Change every 3 seconds
         return () => clearInterval(interval); // Clean up on component unmount
-    }, []); // No dependencies to run only once on mount
+    }, [internships.length]); // Added internships.length to dependencies
 
     // Automatically change feedback card every 3 seconds
     useEffect(() => {
@@ -157,7 +137,7 @@ const ForKnowledgeScreen = () => {
             setCurrentFeedback((prevFeedback) => (prevFeedback + 1) % feedbackData.length); // Move to the next feedback card
         }, 3000); // Change every 3 seconds
         return () => clearInterval(interval); // Clean up on component unmount
-    }, []); // No dependencies to run only once on mount
+    }, [feedbackData.length]); // No dependencies to run only once on mount
 
     return (
         <div style={styles.homeContainer}>
@@ -389,11 +369,6 @@ const styles = {
     color: "#333", // You can customize the font color here
     fontWeight:'Bold',
     },
-    feedbacktext:{
-        fontSize: "1rem", // Adjust font size as needed
-        marginBottom: "20px", // Space below h2 to separate it from the slider
-        color: "#333", // You can customize the font color here
-        },
 
     internshipContainer: {
     display: 'flex',
@@ -570,7 +545,6 @@ const styles = {
     textAlign: 'center', // Center the name horizontally
 },
 feedbackContent: {
-    textAlign: 'justify', // Justify content
     marginBottom: '10px', // Space below content
     textAlign: 'left', // Align content to the left
     flex: 1, // Allow content to take available space
