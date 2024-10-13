@@ -156,9 +156,9 @@ function Footer() {
           <div style={styles.footerColumnRow}>
             <div style={styles.column}>
               <h4>Company</h4>
-              <a href="#" style={styles.link}>About Us</a>
-              <a href="#" style={styles.link}>Contact Us</a>
-              <a href="#" style={styles.link}>Career</a>
+              <a href="/" style={styles.link}>About Us</a>
+              <a href="/" style={styles.link}>Contact Us</a>
+              <a href="/" style={styles.link}>Career</a>
             </div>
             <div style={styles.column}>
               <h4>Products</h4>
