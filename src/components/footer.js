@@ -3,6 +3,7 @@ import logo from '../image/white_logo.png';
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import { BsCaretUpFill } from 'react-icons/bs';
 import ReactCountryFlag from "react-country-flag";
+import ForKnowledgeScreen from '../screens/ForKnowledge';
 
 // Define the base styles
 const styles = {
@@ -162,7 +163,7 @@ function Footer() {
             </div>
             <div style={styles.column}>
               <h4>Products</h4>
-              <a href="/" style={styles.link}>Hunter Knowledge</a>
+              <a href={ForKnowledgeScreen} style={styles.link}>Hunter Knowledge</a>
               <a href="/" style={styles.link}>Hunter Test</a>
               <a href="/" style={styles.link}>Hunter Jobs</a>
               <a href="/" style={styles.link}>Hunter HRMS</a>
@@ -178,9 +179,9 @@ function Footer() {
             </div>
             <div style={styles.column}>
               <h4>Products</h4>
-              <a href="/" style={styles.link}>Hunter Knowledge</a>
-              <a href="/" style={styles.link}>Hunter Test</a>
-              <a href="/" style={styles.link}>Hunter Jobs</a>
+              <a href="/for-knowledge" style={styles.link}>Hunter Knowledge</a>
+              <a href="/for-test" style={styles.link}>Hunter Test</a>
+              <a href="/for-jobs" style={styles.link}>Hunter Jobs</a>
               <a href="/" style={styles.link}>Hunter HRMS</a>
             </div>
           </>
